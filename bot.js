@@ -9,7 +9,7 @@ const prefix = '#'
 
 
 client.on('ready', () => {
-   client.user.setGame("Light Support .");
+   client.user.setGame("Support Light .");
 }); 
 
 
