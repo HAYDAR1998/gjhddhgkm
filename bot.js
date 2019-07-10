@@ -12,7 +12,7 @@ const prefix = '#'
 
 client.on ("guildMemberAdd", member => {
   
-   var role = member.guild.roles.find ("name", "Scar's");
+   var role = member.guild.roles.find ("name", "THIQA's");
    member.addRole (role);
   
 })
@@ -31,7 +31,7 @@ client.on ("guildMemberRemove", member => {
 	client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find('name', 'chat');
   if (!channel) return;
-  channel.send(`**Welcome To Scar Support Server ** ${member} `);
+  channel.send(`**Welcome To THIQA Server ** ${member} `);
 });
 
 
