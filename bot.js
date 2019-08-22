@@ -8,6 +8,9 @@ const prefix = '#'
 
 
 
+client.on('ready', () => {
+   client.user.setGame("THIQA");
+}); 
 	
 
 client.on ("guildMemberAdd", member => {
