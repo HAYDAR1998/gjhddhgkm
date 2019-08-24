@@ -9,7 +9,7 @@ const prefix = '#'
 
 
 client.on('ready', () => {
-   client.user.setGame("THIQA");
+   client.user.setGame("THIQA Support");
 }); 
 	
 
