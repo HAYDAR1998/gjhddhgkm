@@ -44,7 +44,7 @@ if (message.content.startsWith('st')) {
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`NODE『WG』`,"https://www.twitch.tv/haydaraliraqistream")
+client.user.setGame(`🇮🇶`,"https://www.twitch.tv/haydaraliraqistream")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
