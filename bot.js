@@ -6,6 +6,11 @@ const fs = require("fs")
  
 
  
+const moment = require("moment")
+const fs = require("fs")
+ 
+
+ 
 client.on('guildMemberAdd', member => {
 member.guild.fetchInvites().then(guildInvites => {
 const ei = invites[member.guild.id];
@@ -34,7 +39,8 @@ ctx.shadowColor = 'rgba(0, 0, 0, 0.4)';
 ctx.shadowOffsetY = 2;
 ctx.shadowBlur = 2;
 ctx.stroke();
-ctx.beginPath(); 
+ctx.beginPath();
+ 
 fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
     if (err) return console.log(err);
     let BG = Canvas.Image;
@@ -92,20 +98,6 @@ invites[g.id] = guildInvites;
 });
 });
 });
-client.on ("guildMemberAdd", member => {
-  
-   var role = member.guild.roles.find ("name", "..");
-   member.addRole (role);
-  
-})
-
-client.on ("guildMemberRemove", member => {
-   
-})
-
-
-
-
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
