@@ -12,7 +12,7 @@ const ei = invites[member.guild.id];
 invites[member.guild.id] = guildInvites;
 const invite = guildInvites.find(i => ei.get(i.code).uses < i.uses);
 const inviter = client.users.get(invite.inviter.id);
-const logChannel = member.guild.channels.find(channel => channel.name === `oo`);
+const logChannel = member.guild.channels.find(channel => channel.name === `general`);
 if(!logChannel) return;
 setTimeout(() => {
 logChannel.send(`**Invited By: <@${inviter.id}>**`);
@@ -71,7 +71,7 @@ fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Backgro
   ctx.clip();
   ctx.drawImage(ava, 36, 21, 260, 260);
    
-  let c = member.guild.channels.find('name', `oo`)
+  let c = member.guild.channels.find('name', `general`)
   if(!c) return;
   c.sendFile(canvas.toBuffer());
  
