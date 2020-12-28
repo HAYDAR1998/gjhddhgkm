@@ -1,5 +1,5 @@
 const Discord = require("discord.js")
-const config = require("./config.json")
+const prefix = '#'
 const bot = new Discord.Client();
 const fs = require("fs");
 bot.commands = new Discord.Collection();
@@ -109,4 +109,4 @@ client.user.setGame(`🇮🇶 1#`,"https://www.twitch.tv/haydaraliraqistream")
 });
 
 
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
