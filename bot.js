@@ -82,9 +82,9 @@ let font = await jimp.loadFont(jimp.FONT_SANS_32_BLACK) //We declare a 32px font
 
 
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`🇮🇶 1#`,"https://www.twitch.tv/haydaraliraqistream")
+bot.on('ready', () => {
+  console.log(`Logged in as ${bot.user.tag}!`);
+bot.user.setGame(`🇮🇶 1#`,"https://www.twitch.tv/haydaraliraqistream")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
