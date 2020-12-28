@@ -82,31 +82,6 @@ let font = await jimp.loadFont(jimp.FONT_SANS_32_BLACK) //We declare a 32px font
 
 
 
-bot.on('ready', () => {
-  console.log(`Logged in as ${bot.user.tag}!`);
-bot.user.setGame(`🇮🇶 1#`,"https://www.twitch.tv/haydaraliraqistream")
-  console.log('')
-  console.log('')
-  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
-  console.log(`[Start] ${new Date()}`);
-  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
-  console.log('')
-  console.log('╔[════════════════════════════════════]╗');
-  console.log(`Logged in as * [ " ${bot.user.username} " ]`);
-  console.log('')
-  console.log('Informations :')
-  console.log('')
-  console.log(`servers! [ " ${bot.guilds.size} " ]`);
-  console.log(`Users! [ " ${bot.users.size} " ]`);
-  console.log(`channels! [ " ${bot.channels.size} " ]`);
-  console.log('╚[════════════════════════════════════]╝')
-  console.log('')
-  console.log('╔[════════════]╗')
-  console.log(' Bot Is Online')
-  console.log('╚[════════════]╝')
-  console.log('')
-  console.log('')
-});
 
 
 bot.login(process.env.BOT_TOKEN);
