@@ -2,7 +2,6 @@ const Discord = require("discord.js")
 const config = require("./config.json")
 const bot = new Discord.Client();
 const fs = require("fs");
-const prefix = '#'
 bot.commands = new Discord.Collection();
 const db = require("quick.db")
 var jimp = require('jimp');
@@ -82,7 +81,4 @@ let font = await jimp.loadFont(jimp.FONT_SANS_32_BLACK) //We declare a 32px font
 })
 
 
-
-
-
-bot.login(process.env.BOT_TOKEN);
+bot.login(config.token)
