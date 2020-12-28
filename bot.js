@@ -46,7 +46,7 @@ client.on('guildMemberAdd', async member => {
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`🇮🇶`,"https://www.twitch.tv/haydaraliraqistream")
+client.user.setGame(`🇮🇶 1#`,"https://www.twitch.tv/haydaraliraqistream")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
