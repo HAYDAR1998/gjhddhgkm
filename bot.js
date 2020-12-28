@@ -92,13 +92,13 @@ bot.user.setGame(`🇮🇶 1#`,"https://www.twitch.tv/haydaraliraqistream")
   console.log('╚[═════════════════════════════════════════════════════════════════]╝')
   console.log('')
   console.log('╔[════════════════════════════════════]╗');
-  console.log(`Logged in as * [ " ${client.user.username} " ]`);
+  console.log(`Logged in as * [ " ${bot.user.username} " ]`);
   console.log('')
   console.log('Informations :')
   console.log('')
-  console.log(`servers! [ " ${client.guilds.size} " ]`);
-  console.log(`Users! [ " ${client.users.size} " ]`);
-  console.log(`channels! [ " ${client.channels.size} " ]`);
+  console.log(`servers! [ " ${bot.guilds.size} " ]`);
+  console.log(`Users! [ " ${bot.users.size} " ]`);
+  console.log(`channels! [ " ${bot.channels.size} " ]`);
   console.log('╚[════════════════════════════════════]╝')
   console.log('')
   console.log('╔[════════════]╗')
